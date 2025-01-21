@@ -9,7 +9,7 @@ def dice_roll(number):
 
 def on_click(x, y, button, pressed):
     if pressed and dice_roll(5):
-        mouse.move(random.randint(-5, 5), random.randint(-5, 5))  # Adjust the values as needed
+        mouse.move(random.randint(-10, 10), random.randint(-10, 10))  # Adjust the values as needed
 
 # Start listening to mouse events
 with Listener(on_click=on_click) as listener:
